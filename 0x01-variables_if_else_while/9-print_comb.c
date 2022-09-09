@@ -8,7 +8,6 @@
 int main(void)
 {
 	int nl;
-	int ll = 36;
 
 	nl = 48;
 	while (nl < 58)
@@ -21,7 +20,7 @@ int main(void)
 	}
 	if (nl == 57)
 	{
-		putchar(ll);
+		putchar('\n');
 	}
 		nl++;
 	}
