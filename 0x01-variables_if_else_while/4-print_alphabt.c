@@ -10,14 +10,16 @@ int main(void)
 char all;
 
 all = 'a';
+
 while (all <= 'z')
 {
-	if (char all != q && char all != e)
+	if (all != 'q' && all != 'e')
 	{
 	putchar(all);
-	all++
 	}
+	all++;
 }
 	putchar('\n');
 	return (0);
 }
+
