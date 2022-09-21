@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * _strcat - a function that appends the src string to the dest.
- * @dest:  destination varialbe
- * @src: source variable
+ * _strncat - function that concatenates two string using n byte
+ * @dest: integer pointer
+ * @src: integer pointer for source
+ * @n: bytes to be used
  * Return: Always 0
  *
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int a, b;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	for (a = 0; dest[a] != '\0'; a++)
 	{
 
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++)
+	for (b = 0; b < n && src[b] != '\0'; b++)
 	{
-		dest[i++] = src[j];
+		dest[a++] = src[b];
 	}
-	dest[i] = '\0';
-
+	dest[a] = '\0';
 	return (dest);
 }
