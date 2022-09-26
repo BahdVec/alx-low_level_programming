@@ -1,27 +1,22 @@
 #include "main.h"
 
 /**
- * *_strchr - locates a character in a string
- * @s: string to search
- * @c: char to find
- *
- * Return: a pointer to the first occurrence of the character
- * c in the string s, or NULL if the character is not found
+ * _strspn - length of a prefix substring
+ * @accept: accept string
+ * @s: string
+ * Return: Always 0
  */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int a;
+	int i, j;
 
-	while (1)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		a = *s++;
-		if (a == c)
+		for (j = 0; accept[j] != s[i]; j++)
 		{
-			return (s - 1);
-		}
-		if (a == 0)
-		{
-			return (NULL);
+			if (accept[j] == '\0')
+				return (i);
 		}
 	}
+	return (i);
 }
