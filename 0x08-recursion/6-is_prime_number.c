@@ -33,7 +33,7 @@ int finding_prime(int n, int i)
 	{
 		return (1);
 	}
-	else if (n > 0 && n % i == 0)
+	else if (n % i == 0 && i > 0)
 	{
 		return (0);
 	}
