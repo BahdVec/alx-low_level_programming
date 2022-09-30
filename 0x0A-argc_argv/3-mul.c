@@ -10,6 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
+	(void) argc;
 	int result = 1, i;
 
 	if (argc != 3)
