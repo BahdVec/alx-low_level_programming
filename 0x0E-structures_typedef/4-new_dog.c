@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _strlen - returns the length of a string
@@ -16,6 +16,7 @@ int _strlen(char *wu)
 	{
 		l1++;
 	}
+	return (l1);
 }
 
 /**
@@ -41,6 +42,8 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	}
 	dest[i] = '\0';
+
+	return (dest);
 }
 
 /**
