@@ -9,7 +9,7 @@
 */
 int _strlen(char *wu)
 {
-	int l1;
+	int l1 = 0;
 	int i;
 
 	for (i = 0; wu[i] != '\0'; i++)
@@ -31,6 +31,8 @@ int _strlen(char *wu)
 char *_strcpy(char *dest, char *src)
 {
 	int l2, i;
+
+	l2 = 0;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
